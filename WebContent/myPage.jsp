@@ -7,12 +7,12 @@
 <title>myPage</title>
 </head>
 <body>
+
+
 <h1> MyPage </h1>
 今日の予定<br>
 明日の予定<br>
 カレンダー<br>
-<form method="POST" action="InputSchedule" accept-charset="UTF-8">
-<button type="submit"> 入力</button>
-</form>
+<a href="InputSchedule"> 入力</a>
 </body>
 </html>
