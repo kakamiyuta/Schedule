@@ -8,16 +8,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class Login
+ * Servlet implementation class InputSchedule
  */
-@WebServlet("/Login")
-public class Login extends HttpServlet {
+@WebServlet("/InputSchedule")
+public class InputSchedule extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Login() {
+    public InputSchedule() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -35,15 +35,7 @@ public class Login extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		String userID = request.getParameter("userID");
-		String password = request.getParameter("password");
-		if(userID.equals("userID") && password.equals("password")){
-			request.getRequestDispatcher("MyPage").forward(request, response);
-		}else{
-			String errorMessage = "IDまたはパスワードが違います";
-			request.setAttribute("errorMessage", errorMessage);
-			request.getRequestDispatcher("login.jsp").forward(request, response);
-		}
+		request.getRequestDispatcher("inputSchedule.jsp").forward(request, response);
 	}
 
 }

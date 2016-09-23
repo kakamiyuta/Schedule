@@ -4,15 +4,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>myPage</title>
+<title>inputSuccess</title>
 </head>
 <body>
-<h1> MyPage </h1>
-今日の予定<br>
-明日の予定<br>
-カレンダー<br>
-<form method="POST" action="InputSchedule" accept-charset="UTF-8">
-<button type="submit"> 入力</button>
-</form>
+以下の内容で予定を登録しました
+予定:<br>
+時間:<br>
+コメント:<br>
 </body>
 </html>

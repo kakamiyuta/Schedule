@@ -8,16 +8,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class Login
+ * Servlet implementation class InputConfirm
  */
-@WebServlet("/Login")
-public class Login extends HttpServlet {
+@WebServlet("/InputConfirm")
+public class InputConfirm extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Login() {
+    public InputConfirm() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -35,15 +35,16 @@ public class Login extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		String userID = request.getParameter("userID");
-		String password = request.getParameter("password");
-		if(userID.equals("userID") && password.equals("password")){
-			request.getRequestDispatcher("MyPage").forward(request, response);
-		}else{
-			String errorMessage = "ID‚Ü‚½‚ÍƒpƒXƒ[ƒh‚ªˆá‚¢‚Ü‚·";
-			request.setAttribute("errorMessage", errorMessage);
-			request.getRequestDispatcher("login.jsp").forward(request, response);
-		}
+	    int startTime = Integer.parseInt(request.getParameter("startTime"));
+	    int endTime = Integer.parseInt(request.getParameter("endTime"));
+	    //ŽžŠÔ‚ª‚©‚Ô‚Á‚Ä‚¢‚È‚¢‚©‚ð”»’f
+	    if(startTime>0 && endTime>0){
+	    	request.getRequestDispatcher("inputSuccess.jsp").forward(request, response);
+	    }else{
+	    	String errorMessage = "‚»‚ÌŽžŠÔ‚Í‚·‚Å‚É—\’è‚ª“ü‚Á‚Ä‚¢‚Ü‚·";
+	    	request.setAttribute("errorMessage", errorMessage);
+	    	request.getRequestDispatcher("inputSchedule.jsp").forward(request, response);
+	    }
 	}
 
 }
