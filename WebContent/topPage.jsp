@@ -12,11 +12,14 @@
 本アプリケーションではあなたのスケジュールをよりわかりやすく管理いたします
 <br>
 
-<form method="POST" action="Login" accept-charset="UTF-8">
-ID:&emsp;&emsp;&nbsp;&nbsp;&nbsp;<input type=text name=userID><br>
-Password:<input type=password name=password>
-<button type="submit" >送信</button>
-</form>
+<a href="Login">
+ログイン
+</a>
+<br>
+<a href="NewRegister">
+新規登録
+</a>
+
 
 </body>
 </html>
