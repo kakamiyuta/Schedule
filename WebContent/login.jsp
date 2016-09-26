@@ -16,8 +16,8 @@
 <% out.println(errorMessage);%>
 <%} %>
 <br>
-ID:&emsp;&emsp;&nbsp;&nbsp;&nbsp;<input type=text name=userID><br>
-Password:<input type=password name=password>
+ユーザーID:<input type=text name=userID><br>
+パスワード:<input type=password name=password>
 
 <button type="submit" >送信</button>
 
