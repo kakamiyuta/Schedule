@@ -14,7 +14,8 @@
 <% }%>
 <form method="POST" action="InputConfirm" accept-charset="UTF-8">
 予定<input type="text" name="scheduleName"><br>
-時間<input type="text" name="startTime"> ~ <input type="text" name="endTime"><br>
+開始<input type="text" name="startTime"><br>
+終了<input type="text" name="endTime"><br>
 コメント<input type="text" name="comment"><br>
 <button type="submit"> OK </button>
 </form>
