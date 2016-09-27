@@ -43,13 +43,15 @@ public class NewRegister extends HttpServlet {
 		String rePassword = request.getParameter("rePasword");
 		String lastName = request.getParameter("lastName");
 		String firstName = request.getParameter("firstName");
+		String lastNameKana = request.getParameter("lastNameKana");
+		String firstNameKana = request.getParameter("firstNameKana");
 		String birthday = request.getParameter("birthday");
 		String sex = request.getParameter("sex");
 		int sexNumber = NewRegisterLogic.getSexNumber(sex);
 		String mailAddress = request.getParameter("mailAddress");
 		String errorMessage;
 
-		if(userID.isEmpty() || password.isEmpty() || lastName.isEmpty() || firstName.isEmpty() || birthday.isEmpty() || sexNumber == 0 || mailAddress.isEmpty()){
+		if(userID.isEmpty() || password.isEmpty() || lastName.isEmpty() || firstName.isEmpty() || lastNameKana.isEmpty() || firstNameKana.isEmpty() || birthday.isEmpty() || sexNumber == 0 || mailAddress.isEmpty()){
 			errorMessage = "“ü—Í€–Ú‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB";
 		    request.setAttribute("errorMessage", errorMessage);
 		    request.getRequestDispatcher("/newRegister.jsp").forward(request, response);
