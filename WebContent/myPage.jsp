@@ -14,5 +14,6 @@
 明日の予定<br>
 カレンダー<br>
 <a href="InputSchedule"> 入力</a>
+<a href="Data"> データ </a>
 </body>
 </html>
