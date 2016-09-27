@@ -20,7 +20,15 @@
 パスワード:<input type=password name=password>
 
 <button type="submit" >送信</button>
-
+<br>
+ユーザーIDまたはパスワードを忘れた方は
+<a href="RememberID">
+こちら
+</a><br>
+パスワードの変更は
+<a href="ChangePassword">
+こちら
+</a>
 
 </form>
 </body>
