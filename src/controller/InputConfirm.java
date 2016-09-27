@@ -35,6 +35,7 @@ public class InputConfirm extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		request.setCharacterEncoding("UTF-8");
 	    int startTime = Integer.parseInt(request.getParameter("startTime"));
 	    int endTime = Integer.parseInt(request.getParameter("endTime"));
 	    //ŽžŠÔ‚ª‚©‚Ô‚Á‚Ä‚¢‚È‚¢‚©‚ð”»’f
