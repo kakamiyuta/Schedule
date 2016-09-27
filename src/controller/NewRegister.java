@@ -55,12 +55,12 @@ public class NewRegister extends HttpServlet {
 			errorMessage = "入力項目が正しくありません。";
 		    request.setAttribute("errorMessage", errorMessage);
 		    request.getRequestDispatcher("/newRegister.jsp").forward(request, response);
-		}else if(!(password.equals(rePassword))){
+		}else if(password.equals(rePassword)){
 			errorMessage = "パスワードが一致しません。";
 			request.setAttribute("errorMessage", errorMessage);
 			request.getRequestDispatcher("/newRegister.jsp").forward(request, response);
 		}else{
-			request.getRequestDispatcher("/login.jsp").forward(request, response);
+			request.getRequestDispatcher("/registerSuccess.jsp").forward(request, response);
 		}
 
 	}

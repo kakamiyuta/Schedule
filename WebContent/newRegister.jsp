@@ -21,7 +21,7 @@
 苗字:<input type=text name=lastName> &emsp;
 名前:<input type=text name=firstName><br>
 読み(苗字)<input type=text name=lastNameKana> &emsp;
-(名前):<input type=text name=firstNameKana><br>
+読み(名前):<input type=text name=firstNameKana><br>
 誕生日:<input type=text name=birthday><br>
 性別:<input type=text name=sex><br>
 メールアドレス:<input type=text name=mailAddress>
