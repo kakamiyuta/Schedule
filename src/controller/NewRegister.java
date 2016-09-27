@@ -40,19 +40,23 @@ public class NewRegister extends HttpServlet {
 		request.setCharacterEncoding("UTF-8");
 		String userID = request.getParameter("userID");
 		String password = request.getParameter("password");
+		String rePassword = request.getParameter("rePasword");
 		String lastName = request.getParameter("lastName");
 		String firstName = request.getParameter("firstName");
 		String birthday = request.getParameter("birthday");
 		String sex = request.getParameter("sex");
 		int sexNumber = NewRegisterLogic.getSexNumber(sex);
-		System.out.println(sex);
-		System.out.println(sexNumber);
 		String mailAddress = request.getParameter("mailAddress");
+		String errorMessage;
 
 		if(userID.isEmpty() || password.isEmpty() || lastName.isEmpty() || firstName.isEmpty() || birthday.isEmpty() || sexNumber == 0 || mailAddress.isEmpty()){
-			String errorMessage = "入力項目が正しくありません。";
+			errorMessage = "入力項目が正しくありません。";
 		    request.setAttribute("errorMessage", errorMessage);
 		    request.getRequestDispatcher("/newRegister.jsp").forward(request, response);
+		}else if(!(password.equals(rePassword))){
+			errorMessage = "パスワードが一致しません。";
+			request.setAttribute("errorMessage", errorMessage);
+			request.getRequestDispatcher("/newRegister.jsp").forward(request, response);
 		}else{
 			request.getRequestDispatcher("/login.jsp").forward(request, response);
 		}

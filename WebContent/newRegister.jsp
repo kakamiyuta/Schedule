@@ -17,6 +17,7 @@
 <br>
 ユーザーID:<input type=text name=userID><br>
 パスワード:<input type=password name=password><br>
+パスワード再入力:<input type=password name=rePassword><br>
 苗字:<input type=text name=lastName> &emsp;
 名前:<input type=text name=firstName><br>
 誕生日:<input type=text name=birthday><br>
