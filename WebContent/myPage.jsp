@@ -10,13 +10,13 @@
 <%@ include file = "menu.jsp" %>
 <h1>ユーザーさんのマイページ</h1>
 
-<h2><a href=ChangeInformation>登録情報の変更</a></h2><br>
+<h2><a href=ChangeInformation>登録情報の変更</a></h2>
 名前・パスワード・メールアドレスの変更を行うことができます<br>
 
 <h2><a href=Inquiry>問い合わせ</a></h2>
 お問い合わせはこちらから
 
-<h2><a href=Withdraw>退会</a></h2><br>
+<h2><a href=Withdraw>退会</a></h2>
 退会したい場合はこちらから
 </body>
 </html>
