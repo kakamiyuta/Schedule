@@ -10,7 +10,7 @@
 <%@ include file = "menu.jsp" %>
 <h1>ユーザーさんのマイページ</h1>
 
-<h2><a href=ChangeInformation>登録情報の変更</a></h2>
+<h2><a href=ChangeInformation>登録情報の確認・変更</a></h2>
 名前・パスワード・メールアドレスの変更を行うことができます<br>
 
 <h2><a href=Inquiry>問い合わせ</a></h2>
