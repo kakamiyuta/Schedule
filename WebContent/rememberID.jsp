@@ -7,7 +7,7 @@
 <title>rememberID</title>
 </head>
 <body>
-<form method="POST" action="rememberIDSuccess" accept-charset="UTF-8">
+<form method="POST" action="RememberIDSuccess" accept-charset="UTF-8">
 <h1>ユーザーIDまたはパスワードをお忘れの場合</h1><br>
 登録されたメールアドレス宛にあなたのユーザー情報をお送りします<br>
 メールアドレス:<input type=text name=mailAddress><br>
