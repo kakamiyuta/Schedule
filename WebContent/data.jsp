@@ -7,6 +7,7 @@
 <title>data</title>
 </head>
 <body>
+<%@ include file="menu.jsp"%>
 <h1>あなたのデータ</h1>
 今月<br>
 先月<br>

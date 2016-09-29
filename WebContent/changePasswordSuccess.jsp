@@ -7,6 +7,7 @@
 <title>changePasswordSuccess</title>
 </head>
 <body>
+<%@ include file="menu.jsp"%>
 <h1>パスワードを変更しました</h1><br>
 <a href=MyPage>マイページ</a>
 </body>

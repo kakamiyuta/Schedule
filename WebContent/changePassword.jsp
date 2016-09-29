@@ -8,7 +8,7 @@
 <title>changePassword</title>
 </head>
 <body>
-
+<%@ include file="menu.jsp"%>
 <form method="POST" action="ChangePasswordConfirm" accept-charset="UTF-8">
 <h1>
 パスワード変更

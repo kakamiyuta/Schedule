@@ -8,6 +8,7 @@
 <title>inputSchedule</title>
 </head>
 <body>
+<%@ include file="menu.jsp"%>
 <h1>予定入力</h1>
 <%if(errorMessage != null) {%>
 <% out.println(errorMessage);%>

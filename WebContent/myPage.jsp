@@ -7,7 +7,7 @@
 <title>myPage</title>
 </head>
 <body>
-
+<%@ include file="menu.jsp"%>
 
 <h1> MyPage </h1>
 今日の予定<br>

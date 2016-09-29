@@ -7,6 +7,7 @@
 <title>inputSuccess</title>
 </head>
 <body>
+<%@ include file="menu.jsp"%>
 以下の内容で予定を登録しました<br>
 予定:<br>
 時間:<br>
