@@ -47,7 +47,7 @@ public class ChangePasswordConfirm extends HttpServlet {
 			request.setAttribute("errorMessage", errorMessage);
 			request.getRequestDispatcher("/changePassword.jsp").forward(request, response);
 		}else{
-			request.getRequestDispatcher("/changePasswordSuccess.jsp").forward(request, response);
+			request.getRequestDispatcher("/changeSuccess.jsp").forward(request, response);
 		}
 	}
 
