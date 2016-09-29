@@ -13,6 +13,5 @@
 先月<br>
 通算<br>
 
-<a href=MyPage>マイページ</a>
 </body>
 </html>

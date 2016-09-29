@@ -39,11 +39,11 @@ public class Login extends HttpServlet {
 		String userID = request.getParameter("userID");
 		String password = request.getParameter("password");
 		if(userID.equals("userID") && password.equals("password")){
-			request.getRequestDispatcher("MyPage").forward(request, response);
+			request.getRequestDispatcher("/Calendar").forward(request, response);
 		}else{
 			String errorMessage = "IDまたはパスワードが違います";
 			request.setAttribute("errorMessage", errorMessage);
-			request.getRequestDispatcher("login.jsp").forward(request, response);
+			request.getRequestDispatcher("/login.jsp").forward(request, response);
 		}
 	}
 

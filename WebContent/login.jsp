@@ -25,10 +25,6 @@
 <a href="RememberID">
 こちら
 </a><br>
-パスワードの変更は
-<a href="ChangePassword">
-こちら
-</a>
 
 </form>
 </body>

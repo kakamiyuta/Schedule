@@ -12,9 +12,5 @@
 予定:<br>
 時間:<br>
 コメント:<br>
-
-<a href="MyPage">
-マイページ
-</a>
 </body>
 </html>
