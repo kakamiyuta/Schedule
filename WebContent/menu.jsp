@@ -39,6 +39,7 @@ color: #FF0000; /* ポイント時の文字色 */
 <TR>
 <TD WIDTH="20%"><A href="Calendar">カレンダー</A></TD>
 <TD WIDTH="20%"><A href="Data">データ</A></TD>
+<TD WIDTH="20%"><A href="MyPage">マイページ</A></TD>
 <TD WIDTH="20%"><A href="InputSchedule">予定の入力</A></TD>
 <TD WIDTH="20%"><A href="Logout">ログアウト</A></TD>
 </TR>
