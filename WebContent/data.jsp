@@ -10,6 +10,8 @@
 <h1>あなたのデータ</h1>
 今月<br>
 先月<br>
-通算
+通算<br>
+
+<a href=MyPage>マイページ</a>
 </body>
 </html>
