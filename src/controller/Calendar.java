@@ -10,14 +10,14 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class MyPage
  */
-@WebServlet("/MyPage")
-public class MyPage extends HttpServlet {
+@WebServlet("/Calendar")
+public class Calendar extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
+
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public MyPage() {
+    public Calendar() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -27,7 +27,7 @@ public class MyPage extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		request.getRequestDispatcher("myPage.jsp").forward(request, response);
+		request.getRequestDispatcher("/calendar.jsp").forward(request, response);
 	}
 
 	/**

@@ -4,12 +4,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>myPage</title>
+<title>calendar</title>
 </head>
 <body>
 <%@ include file="menu.jsp"%>
 
-<h1> MyPage </h1>
+<h1> カレンダー </h1>
 今日の予定<br>
 明日の予定<br>
 カレンダー<br>
