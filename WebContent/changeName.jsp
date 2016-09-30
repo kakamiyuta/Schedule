@@ -20,7 +20,7 @@
 <% out.println("新しい名前を入力してください");%>
 <%} %>
 
-<form method="POST" action="ChangeName">
+<form method="POST" action="ChangeName" accept-charset="UTF-8">
 苗字:<input type=text name="lastName"> &emsp;
 名前:<input type=text name="firstName"><br>
 苗字(読み):<input type=text name="lastNameKana"> &emsp;
