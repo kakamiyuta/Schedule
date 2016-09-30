@@ -8,6 +8,8 @@
 <title>changeAddress</title>
 </head>
 <body>
+<%@ include file="menu.jsp" %>
+
 <h1>メールアドレスの変更</h1>
 
 <%if(errorMessage != null){ %>
