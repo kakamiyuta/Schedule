@@ -9,10 +9,21 @@
 </head>
 <body>
 <h1>メールアドレスの変更</h1>
+
+<%if(errorMessage != null){ %>
+
+<% out.println(errorMessage);%>
+<% }else{%>
+
+<% out.println("新しいメールアドレスを入力してください");%>
+<%} %>
+
 <form method="POST" action="ChangeName" accept-charset="UTF-8">
 新しいメールアドレス<input type=text name=newAddress><br>
 再入力<input type=text name=reNewAddress>
+
 <button type="submit">送信</button>
+
 </form>
 </body>
 </html>

@@ -35,7 +35,16 @@ public class ChangeAddress extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		doGet(request, response);
+		String newAddress = request.getParameter("newAddress");
+		String reNewAddress = request.getParameter("reNewAddress");
+		String errorMessage;
+		if(newAddress.equals(reNewAddress) || newAddress.isEmpty() || reNewAddress.isEmpty()){
+			errorMessage = "メールアドレスを正しく入力してください";
+			request.setAttribute("errorMessage", errorMessage);
+			request.getRequestDispatcher("/changeAddress.jsp").forward(request, response);
+		}else{
+			request.getRequestDispatcher("/changeSuccess.jsp").forward(request, response);
+		}
 
 	}
 
