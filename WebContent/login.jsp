@@ -16,10 +16,15 @@
 <% out.println(errorMessage);%>
 <%} %>
 <br>
-ユーザーID:<input type=text name=userID><br>
-パスワード:<input type=password name=password>
+<h3>ユーザーID</h3>
+<input type=text name=userID><br>
 
-<button type="submit" >送信</button>
+<h3>パスワード</h3>
+<input type=password name=password><br>
+<br>
+
+&emsp;&emsp;&emsp;<button type="submit" >送信</button>
+<br>
 <br>
 ユーザーIDまたはパスワードを忘れた方は
 <a href="RememberID">

@@ -15,18 +15,35 @@
 <% out.println(errorMessage);%>
 <%} %>
 <br>
-ユーザーID:<input type=text name=userID><br>
-パスワード:<input type=password name=password><br>
-パスワード再入力:<input type=password name=rePassword><br>
-苗字:<input type=text name=lastName> &emsp;
-名前:<input type=text name=firstName><br>
-読み(苗字)<input type=text name=lastNameKana> &emsp;
-読み(名前):<input type=text name=firstNameKana><br>
-誕生日:<input type=text name=birthday><br>
-性別:<input type=text name=sex><br>
-メールアドレス:<input type=text name=mailAddress>
 
-<button type="submit" >登録</button>
+<h3>ユーザーID</h3>
+<input type=text name=userID><br>
+
+<h3>パスワード</h3>
+<input type=password name=password><br>
+
+<h3>パスワード再入力</h3>
+<input type=password name=rePassword><br>
+
+<h3>名前</h3>
+姓:<input type=text name=lastName> &emsp;
+名:<input type=text name=firstName><br>
+
+<h3>読み(カナ)</h3>
+姓:<input type=text name=lastNameKana> &emsp;
+名:<input type=text name=firstNameKana><br>
+
+<h3>誕生日</h3>
+<input type=text name=birthday><br>
+
+<h3>性別</h3>
+<input type=text name=sex><br>
+
+<h3>メールアドレス</h3>
+<input type=text name=mailAddress><br>
+<br>
+
+&emsp;&emsp;&emsp;<button type="submit" >登録</button>
 </form>
 </body>
 </html>
