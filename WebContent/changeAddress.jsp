@@ -20,7 +20,7 @@
 <% out.println("新しいメールアドレスを入力してください");%>
 <%} %>
 
-<form method="POST" action="ChangeName" accept-charset="UTF-8">
+<form method="POST" action="ChangeAddress" accept-charset="UTF-8">
 新しいメールアドレス<input type=text name=newAddress><br>
 再入力<input type=text name=reNewAddress>
 

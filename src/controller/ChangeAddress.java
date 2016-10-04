@@ -38,7 +38,7 @@ public class ChangeAddress extends HttpServlet {
 		String newAddress = request.getParameter("newAddress");
 		String reNewAddress = request.getParameter("reNewAddress");
 		String errorMessage;
-		if(newAddress.equals(reNewAddress) || newAddress.isEmpty() || reNewAddress.isEmpty()){
+		if(newAddress.equals(reNewAddress) || newAddress.isEmpty() || reNewAddress.isEmpty() || !newAddress.equals(reNewAddress)){
 			errorMessage = "メールアドレスを正しく入力してください";
 			request.setAttribute("errorMessage", errorMessage);
 			request.getRequestDispatcher("/changeAddress.jsp").forward(request, response);
