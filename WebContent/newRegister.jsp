@@ -6,6 +6,16 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>newRegister</title>
+
+<script>
+    /*確認ダイアログ*/
+    function submitChk () {
+        var flag = confirm ( "こちらの内容で登録してもよろしいですか？\n\n登録したくない場合は[キャンセル]ボタンを押して下さい");
+        /* send_flg が TRUEなら送信、FALSEなら送信しない */
+        return flag;
+    }
+</script>
+
 </head>
 <body>
 
@@ -43,7 +53,7 @@
 <input type=text name=mailAddress><br>
 <br>
 
-&emsp;&emsp;&emsp;<button type="submit" >登録</button>
+&emsp;&emsp;&emsp;<button type="submit" onClick="return submitChk()">登録</button>
 </form>
 </body>
 </html>
