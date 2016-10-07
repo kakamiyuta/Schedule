@@ -13,7 +13,7 @@
 <%if(errorMessage != null) {%>
 <% out.println(errorMessage);%>
 <% }%>
-<form method="POST" action="InputConfirm" accept-charset="UTF-8">
+<form method="POST" action="InputSchedule" accept-charset="UTF-8">
 <h3>予定</h3>
 <input type="text" name="scheduleName"><br>
 
