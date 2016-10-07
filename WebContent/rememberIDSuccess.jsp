@@ -7,7 +7,7 @@
 <title>rememberIDSuccess</title>
 </head>
 <body>
-以下のアドレスにユーザーIDとパスワード情報を送信しました<br>
+<h2>以下のアドレスにユーザーIDとパスワード情報を送信しました</h2>
 アドレス:<br>
 <a href=Login>ログイン</a>
 </body>

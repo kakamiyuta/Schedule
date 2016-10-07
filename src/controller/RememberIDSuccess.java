@@ -35,7 +35,16 @@ public class RememberIDSuccess extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		request.getRequestDispatcher("/rememberIDSuccess.jsp").forward(request, response);
+		request.setCharacterEncoding("UTF-8");
+		String mailAddress = request.getParameter("mailAddress");
+		String errorMessage;
+ 		if(mailAddress.isEmpty()){
+			errorMessage = "メールアドレスを入力してください";
+			request.setAttribute("errorMessage", errorMessage);
+			request.getRequestDispatcher("/rememberID.jsp").forward(request, response);
+		}else{
+			request.getRequestDispatcher("/rememberIDSuccess.jsp").forward(request, response);
+		}
 	}
 
 }
