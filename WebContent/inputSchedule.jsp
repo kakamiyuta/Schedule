@@ -14,10 +14,20 @@
 <% out.println(errorMessage);%>
 <% }%>
 <form method="POST" action="InputConfirm" accept-charset="UTF-8">
-予定<input type="text" name="scheduleName"><br>
-開始<input type="text" name="startTime"><br>
-終了<input type="text" name="endTime"><br>
-コメント<input type="text" name="comment"><br>
+<h3>予定</h3>
+<input type="text" name="scheduleName"><br>
+
+<h3>開始</h3>
+<input type="text" name="startTime"><br>
+
+<h3>終了</h3>
+<input type="text" name="endTime"><br>
+
+<h3>コメント</h3>
+<input type="text" name="comment"><br>
+
+<br>
+&emsp;&emsp;&emsp;
 <button type="submit"> OK </button>
 </form>
 </body>
