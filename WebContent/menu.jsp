@@ -36,7 +36,7 @@ color: #FF0000; /* ポイント時の文字色 */
 
 <script>
     /*確認ダイアログ*/
-    function submitChk () {
+    function submitLogout () {
         var flag = confirm ( "ログアウトしてもよろしいですか？\n\nログアウトしたくない場合は[キャンセル]ボタンを押して下さい");
         /* send_flg が TRUEなら送信、FALSEなら送信しない */
         return flag;
@@ -51,7 +51,7 @@ color: #FF0000; /* ポイント時の文字色 */
 <TD WIDTH="20%"><A href="Data">データ</A></TD>
 <TD WIDTH="20%"><A href="MyPage">マイページ</A></TD>
 <TD WIDTH="20%"><A href="InputSchedule">予定の入力</A></TD>
-<TD WIDTH="20%"><A href="Logout" onclick="return submitChk()">ログアウト</A></TD>
+<TD WIDTH="20%"><A href="Logout" onclick="return submitLogout()">ログアウト</A></TD>
 </TR>
 </TABLE>
 
