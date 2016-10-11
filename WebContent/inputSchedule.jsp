@@ -6,6 +6,16 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>inputSchedule</title>
+
+<script>
+    /*確認ダイアログ*/
+    function submitChk () {
+        var flag = confirm ( "以下の内容で予定を登録してもよろしいですか？\n\n登録したくない場合は[キャンセル]ボタンを押して下さい");
+        /* send_flg が TRUEなら送信、FALSEなら送信しない */
+        return flag;
+    }
+</script>
+
 </head>
 <body>
 <%@ include file="menu.jsp"%>
@@ -28,7 +38,7 @@
 
 <br>
 &emsp;&emsp;&emsp;
-<button type="submit"> OK </button>
+<button type="submit" onClick="return submitChk()"> OK </button>
 </form>
 </body>
 </html>
