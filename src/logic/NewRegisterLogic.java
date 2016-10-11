@@ -4,10 +4,10 @@ public class NewRegisterLogic {
 	public static int getSexNumber(String sex) {
 		int sexNumber;
 		switch (sex) {
-		case "’j":
+		case "man":
 			sexNumber = 1;
 			break;
-		case "—":
+		case "woman":
 			sexNumber = 2;
 			break;
 		default:
