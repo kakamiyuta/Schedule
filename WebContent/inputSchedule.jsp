@@ -9,7 +9,7 @@
 
 <script>
     /*確認ダイアログ*/
-    function submitChk () {
+    function submitSchedule () {
         var flag = confirm ( "以下の内容で予定を登録してもよろしいですか？\n\n登録したくない場合は[キャンセル]ボタンを押して下さい");
         /* send_flg が TRUEなら送信、FALSEなら送信しない */
         return flag;
@@ -38,7 +38,7 @@
 
 <br>
 &emsp;&emsp;&emsp;
-<button type="submit" onClick="return submitChk()"> OK </button>
+<button type="submit" onClick="return submitSchedule()"> OK </button>
 </form>
 </body>
 </html>

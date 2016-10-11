@@ -6,6 +6,16 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>inquiry</title>
+
+<script>
+    /*確認ダイアログ*/
+    function submitInquiry () {
+        var flag = confirm ( "以下の内容でお問合せをしてもよろしいですか？\n\nお問い合わせをしたくない場合は[キャンセル]ボタンを 押して下さい");
+        /* send_flg が TRUEなら送信、FALSEなら送信しない */
+        return flag;
+    }
+</script>
+
 </head>
 <body>
 <%@ include file="menu.jsp"%>
@@ -28,7 +38,7 @@
 <input type=text name=content>
 <br>
 
-<button type=submit>送信</button>
+<button type=submit onClick="return submitInquiry()">送信</button>
 
 </form>
 </body>

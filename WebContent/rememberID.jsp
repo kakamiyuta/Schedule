@@ -10,7 +10,7 @@
 
 <script>
     /*確認ダイアログ*/
-    function submitChk () {
+    function submitID () {
         var flag = confirm ( "こちらのアドレスに送信してもよろしいですか？\n\n送信したくない場合は[キャンセル]ボタンを押して下さい");
         /* send_flg が TRUEなら送信、FALSEなら送信しない */
         return flag;
@@ -35,7 +35,7 @@
 <br>
 
 &emsp;&emsp;&emsp;
-<button type="submit" onClick = "return submitChk()">送信</button>
+<button type="submit" onClick = "return submitID()">送信</button>
 </form>
 
 </body>

@@ -5,6 +5,16 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>withdraw</title>
+
+<script>
+    /*確認ダイアログ*/
+    function submitWithdraw () {
+        var flag = confirm ( "本当に退会してもよろしいですか？\n\n退会したくない場合は[キャンセル]ボタンを 押して下さい");
+        /* send_flg が TRUEなら送信、FALSEなら送信しない */
+        return flag;
+    }
+</script>
+
 </head>
 <body>
 <%@ include file="menu.jsp"%>
@@ -16,7 +26,7 @@
 <h3>退会理由</h3>
 <input type=text name=reason>
 
-<button type=submit>送信</button>
+<button type=submit onClick="return submitWithdraw()">送信</button>
 </form>
 
 </body>

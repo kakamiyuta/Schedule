@@ -6,6 +6,16 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>changeAddress</title>
+
+<script>
+    /*確認ダイアログ*/
+    function submitAddress () {
+        var flag = confirm ( "メールアドレスを変更してもよろしいですか？\n\n変更したくない場合は[キャンセル]ボタンを 押して下さい");
+        /* send_flg が TRUEなら送信、FALSEなら送信しない */
+        return flag;
+    }
+</script>
+
 </head>
 <body>
 <%@ include file="menu.jsp" %>
@@ -24,7 +34,7 @@
 新しいメールアドレス<input type=text name=newAddress><br>
 再入力<input type=text name=reNewAddress>
 
-<button type="submit">送信</button>
+<button type="submit" onClick="return submitAddress()">送信</button>
 
 </form>
 </body>

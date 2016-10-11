@@ -6,6 +6,16 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>changePassword</title>
+
+<script>
+    /*確認ダイアログ*/
+    function submitPassword () {
+        var flag = confirm ( "パスワードを変更してもよろしいですか？\n\n変更したくない場合は[キャンセル]ボタンを 押して下さい");
+        /* send_flg が TRUEなら送信、FALSEなら送信しない */
+        return flag;
+    }
+</script>
+
 </head>
 <body>
 <%@ include file="menu.jsp"%>
@@ -21,7 +31,7 @@
 現在のパスワード:<input type=password name=password><br>
 新しいパスワード:<input type=password name=newPassword><br>
 パスワード再入力:<input type=password name=reNewPassword><br>
-<button type="submit" >送信</button>
+<button type="submit" onClick = "return submitPassword()">送信</button>
 </form>
 </body>
 </html>
