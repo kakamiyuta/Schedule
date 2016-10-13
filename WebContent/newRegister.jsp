@@ -44,7 +44,34 @@
 名:<input type=text name=firstNameKana><br>
 
 <h3>誕生日</h3>
-<input type=text name=birthday><br>
+
+<select name="year">
+<% for(int i=1900; i<2016; i++){%>
+<option>
+<% out.println(i); %>
+</option>
+<% }%>
+</select>
+年
+
+<select name="month">
+<% for(int i=1; i<13; i++){%>
+<option>
+<% out.println(i); %>
+</option>
+<% }%>
+</select>
+月
+
+<select name="day">
+<% for(int i=1; i<32; i++){%>
+<option>
+<% out.println(i); %>
+</option>
+<% }%>
+</select>
+日
+
 
 <h3>性別</h3>
 <select name="sex">

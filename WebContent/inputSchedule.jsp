@@ -28,10 +28,97 @@
 <input type="text" name="scheduleName"><br>
 
 <h3>開始</h3>
-<input type="text" name="startTime"><br>
+<select name="year">
+<% for(int i=2016; i<2019; i++){%>
+<option>
+<% out.println(i); %>
+</option>
+<% }%>
+</select>
+年
+
+<select name="month">
+<% for(int i=1; i<13; i++){%>
+<option>
+<% out.println(i); %>
+</option>
+<% }%>
+</select>
+月
+
+<select name="day">
+<% for(int i=1; i<32; i++){%>
+<option>
+<% out.println(i); %>
+</option>
+<% }%>
+</select>
+日
+
+<select name="hour">
+<% for(int i=0; i<24; i++){%>
+<option>
+<% out.println(i); %>
+</option>
+<% }%>
+</select>
+時
+
+<select name="">
+<% for(int i=0; i<60; i++){%>
+<option>
+<% out.println(i); %>
+</option>
+<% }%>
+</select>
+分
 
 <h3>終了</h3>
-<input type="text" name="endTime"><br>
+<select name="year">
+<% for(int i=2016; i<2019; i++){%>
+<option>
+<% out.println(i); %>
+</option>
+<% }%>
+</select>
+年
+
+<select name="month">
+<% for(int i=1; i<13; i++){%>
+<option>
+<% out.println(i); %>
+</option>
+<% }%>
+</select>
+月
+
+<select name="day">
+<% for(int i=1; i<32; i++){%>
+<option>
+<% out.println(i); %>
+</option>
+<% }%>
+</select>
+日
+
+<select name="hour">
+<% for(int i=0; i<24; i++){%>
+<option>
+<% out.println(i); %>
+</option>
+<% }%>
+</select>
+時
+
+<select name="">
+<% for(int i=0; i<60; i++){%>
+<option>
+<% out.println(i); %>
+</option>
+<% }%>
+</select>
+分
+
 
 <h3>コメント</h3>
 <input type="text" name="comment"><br>
